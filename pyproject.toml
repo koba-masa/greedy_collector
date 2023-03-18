@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "security-notification-bot"
+version = "0.1.0"
+description = "セキュリティ関連の通知をDiscordに行うbot"
+authors = ["koba-masa"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "security_notification_bot"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
