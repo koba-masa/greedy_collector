@@ -10,6 +10,7 @@ packages = [{include = "security_notification_bot"}]
 [tool.poetry.dependencies]
 python = "^3.9"
 discord-webhook = "^1.1.0"
+python-dotenv = "^1.0.0"
 
 
 [tool.poetry.group.test.dependencies]
