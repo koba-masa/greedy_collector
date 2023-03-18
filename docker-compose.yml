@@ -1,0 +1,19 @@
+version: "3"
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: ./docker_files/Dockerfile
+    volumes:
+      - .:/usr/src/security_notification_bot
+      - app_poetry:/root/.cache/pypoetry
+    tty: true
+    environment:
+      PYTHONPATH: /usr/src/security_notification_bot/security_notification_bot
+      PYTHONDONTWRITEBYTECODE: 1
+    command: bash -c "poetry install; /bin/bash"
+
+volumes:
+  app_poetry:
+    external: false
