@@ -1,2 +1,1 @@
-# security_notification_bot
-セキュリティ関連の通知をDiscordに行うbot
+# greedy_collector

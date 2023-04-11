@@ -1,7 +1,7 @@
 [tool.poetry]
-name = "security-notification-bot"
+name = "greedy-collector"
 version = "0.1.0"
-description = "セキュリティ関連の通知をDiscordに行うbot"
+description = ""
 authors = ["koba-masa"]
 license = "MIT"
 readme = "README.md"

@@ -6,11 +6,11 @@ services:
       context: .
       dockerfile: ./docker_files/Dockerfile
     volumes:
-      - .:/usr/src/security_notification_bot
+      - .:/usr/src/greedy_collectorv
       - app_poetry:/root/.cache/pypoetry
     tty: true
     environment:
-      PYTHONPATH: /usr/src/security_notification_bot/security_notification_bot
+      PYTHONPATH: /usr/src/greedy_collector/greedy_collector
       PYTHONDONTWRITEBYTECODE: 1
     command: bash -c "poetry install; /bin/bash"
 
